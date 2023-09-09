@@ -68,14 +68,14 @@ return {
         }
     },
 
-  lazy = {
-    defaults = { lazy = true },
-    performance = {
-      rtp = {
-        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
-      },
+    lazy = {
+        defaults = { lazy = true },
+        performance = {
+            rtp = {
+                disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
+            },
+        },
     },
-  },
 
     polish = function()
         vim.api.nvim_create_autocmd("BufLeave", {
@@ -85,5 +85,6 @@ return {
                 end
             end
         })
+
     end,
 }
