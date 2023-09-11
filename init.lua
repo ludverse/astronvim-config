@@ -34,7 +34,16 @@ return {
         },
 
         config = {
-            ["rust-analyzer"] = {
+            ["rust_analyzer"] = {
+                capabilities = {
+                    textDocument = {
+                        completion = {
+                            completionItem = {
+                                snippetSupport = false
+                            }
+                        }
+                    }
+                },
                 diagnostics = {
                     enable = true,
                     experimental = {
